@@ -7,6 +7,8 @@ Este archivo contiene modulos para:
 
 Cada función retorna un código de estado y resultado según la función.
 """
+
+
 def operation_selector(num1, num2, op):
     """
     Ejecuta una operación entre dos números enteros según el operador indicado.
@@ -49,7 +51,7 @@ def operation_selector(num1, num2, op):
     elif op == "-":
         resultado = num1 - num2
     elif op == "*":
-        resultado = num1 *num2
+        resultado = num1 * num2
     elif op == "&":
         resultado = num1 & num2
     else:
@@ -91,7 +93,7 @@ def calculo_promedio(lista_valores):
 
     # Se evita la división por cero si la lista está vacía
     if len(lista_valores) == 0:
-        return -80, resultado 
+        return -80, resultado
 
     # Cálculo del promedio
     resultado = sum(lista_valores) / len(lista_valores)
